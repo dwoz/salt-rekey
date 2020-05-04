@@ -43,4 +43,6 @@ echo 'Run cleanup on minions'
 salt '*' state.sls rekey-minions-cleanup
 
 echo "Cleanup minion rekey states"
-rm $FILE_ROOT_DIR/{rekey-minions.sls,rekey-minions-cleanup.sls,rekey-minion.sh}
+rm $FILE_ROOT_DIR/rekey-minions.sls
+rm $FILE_ROOT_DIR/rekey-minions-cleanup.sls
+rm $FILE_ROOT_DIR/rekey-minion.sh
