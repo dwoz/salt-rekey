@@ -46,3 +46,14 @@ echo "Cleanup minion rekey states"
 rm $FILE_ROOT_DIR/rekey-minions.sls
 rm $FILE_ROOT_DIR/rekey-minions-cleanup.sls
 rm $FILE_ROOT_DIR/rekey-minion.sh
+
+
+cat << EOF
+
+*** Be advised that minions not currently connected to the master
+will not be able to reconnect and may require manual
+regeneration via a local call to and then restarting the minion
+
+    salt-call saltutil.regen_keys
+
+EOF
