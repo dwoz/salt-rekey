@@ -22,13 +22,13 @@ echo '============================='
 
 
 echo 'Setup minion rekey states'
-cp states/rekey-minions.sls states/rekey-minion.sh $FILE_ROOT_DIR
+cp states/rekey-minions.sls states/rekey-minions-cleanup.sls states/rekey-minion.sh $FILE_ROOT_DIR
 
 echo 'Send command to rekey salt minions (No response from minions is expected)'
 salt '*' state.sls rekey-minions
 
 echo 'Rekey salt master'
-rm -rf $PKI_DIR
+rm -r $PKI_DIR
 echo 'Restart salt master'
 systemctl restart salt-master
 
@@ -36,5 +36,11 @@ echo "Sleep for $MINION_RESTART_WAIT"
 sleep $MINION_RESTART_WAIT
 salt-key -A -y
 
+echo "Sleep for $MINION_RESTART_WAIT"
+sleep $MINION_RESTART_WAIT
+
+echo 'Run cleanup on minions'
+salt '*' state.sls rekey-minions-cleanup
+
 echo "Cleanup minion rekey states"
-rm $FILE_ROOT_DIR/{rekey-minions.sls,rekey-minion.sh}
+rm $FILE_ROOT_DIR/{rekey-minions.sls,rekey-minions-cleanup.sls,rekey-minion.sh}
