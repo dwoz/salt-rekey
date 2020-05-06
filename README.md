@@ -28,7 +28,9 @@ forcing manual intervention.
 To pull this project down for use on a Salt Master, you need `git`.
 Use the following command to download the script for use:
 
-`git clone git@github.com:cachedout/salt-rekey.git`
+```
+git clone git@github.com:dwoz/salt-rekey.git
+```
 
 The above command will pull down the necessary files into a directory called
 `salt-rekey`. All subsequent commands should be executed from inside that
