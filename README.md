@@ -1,4 +1,4 @@
-## salt-rekey
+# salt-rekey
 
 This is a script designed to quickly re-key Salt minions. It was written
 originally as a part of the mitigation efforts for CVE-2020-11651 and
