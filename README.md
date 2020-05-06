@@ -21,7 +21,7 @@ breach.
 
 This script is provided without any fitness or warranty. It may cause
 minions to be disconnected from the Salt master and fail to reconnect,
-forcing manuel intervention.
+forcing manual intervention.
 
 ## Installation
 
