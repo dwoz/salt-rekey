@@ -9,7 +9,7 @@ and re-connect.
 For background information on Salt's security model and the role of
 keys, please see this document:
 
-https://get.saltstack.com/rs/304-PHQ-615/images/SaltStack-Trust_Overview-of-SaltStack-security-model-white-paper.pdf
+* [SaltStack Trust: An overview of the SaltStack platform security model](https://get.saltstack.com/rs/304-PHQ-615/images/SaltStack-Trust_Overview-of-SaltStack-security-model-white-paper.pdf)
 
 ## Why
 
