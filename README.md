@@ -38,7 +38,7 @@ directory.
 
 ## Configuration
 
-This script should be run from the salt master itself. It uses the following
+This script should be run from the Salt master itself. It uses the following
 environment variables which may be set:
 
 Variable name|Description|Default
