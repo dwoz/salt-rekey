@@ -2,7 +2,7 @@
 
 This is a script designed to quickly re-key Salt minions. It was written
 originally as a part of the mitigation efforts for [CVE-2020-11651](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11651) and
-CVE-2020-11652 but it can be used in any scenario in which all minions
+[CVE-2020-11652](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11652) but it can be used in any scenario in which all minions
 connected to a salt-master should be forced to re-generate their keys
 and re-connect.
 
