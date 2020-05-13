@@ -1,3 +1,4 @@
+#!/bin/bash
 if [ -z "$FILE_ROOT_DIR" ]; then
   if [ -z "$FILE_ROOT_ENV" ]; then
     FILE_ROOT_ENV=base
